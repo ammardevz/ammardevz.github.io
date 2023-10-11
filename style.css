@@ -1,0 +1,229 @@
+@font-face {
+  font-family: "Pinchik";
+  src: url("fonts/Pinchik-PersonalUse\ -\ Copy.otf") format("opentype"); /* Replace 'path/to/font-file.ttf' with the actual path to your font file */
+}
+
+@font-face {
+  font-family: "Northlane";
+  src: url("fonts/Northlane-One\ -\ Copy.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Berlin";
+  src: url("fonts/Berlin\ -\ Copy.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+header {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+  aspect-ratio: inherit;
+  padding: 20px;
+  margin-left: 50px;
+  transition: all 0.45s ease;
+}
+
+header img:hover {
+  transform: scale(1.06);
+}
+
+header h1 {
+  color: white;
+  text-decoration-style: dotted;
+  font-family: "Northlane";
+}
+
+.navigation-bar ul {
+  display: flex;
+  list-style-type: none;
+  margin-left: auto;
+}
+
+.navigation-bar li {
+  margin-right: 18px;
+  transition: all 0.1s ease-in;
+  font-size: 1.5em;
+}
+
+.navigation-bar li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Northlane";
+}
+
+.navigation-bar li:hover {
+  transform: translateY(2.5px);
+}
+
+main {
+  padding: 40px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  color: black;
+  font-size: 1.4em;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+main p {
+  font-family: "Berlin";
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+main p span {
+  font-family: "Berlin";
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+footer p {
+  padding: 10px;
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  animation: footer-hover 1s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes footer-hover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.handler {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  padding-bottom: 200px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 50px;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.item {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* adjust shadow style */
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  margin-right: 30px;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+}
+
+.item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+  filter: blur(1px);
+  object-fit: cover;
+  z-index: -1;
+}
+.item h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #2960b3, 0 0 40px #49199b;
+  transition: all 0.5s ease;
+} 
+
+ .item:hover > h2 {
+  color: rgba(255, 255, 255, 0.694);
+  text-shadow: none;
+  top: 30%;
+ }
+
+.item:hover {
+  translate: 0 -6%;
+  cursor: pointer;
+}
+
+.item:hover > img {
+  transform: scale(1.2);
+  filter: none;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.handler h1 {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 20px;
+  margin-top: 35px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+::selection {
+  background-color: #ffcc00; /* specify your desired background color */
+  color: #000000; /* specify your desired text color */
+}

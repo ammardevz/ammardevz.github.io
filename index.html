@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMMAR DEV</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fancy_styles.css">
+  </head>
+  <body>
+    <header>
+      <a href="#"><img src="media/logo_cut.png" /></a>
+      <h1>AMMAR DEV</h1>
+      <nav class="navigation-bar">
+        <ul>
+          <li><a href="index.html" title="Go to Home">Home</a></li>
+          <li><a href="#" onclick="scrollToSection(event, 'main')" title="Go to About me!">About</a></li>
+          <li><a href="#" onclick="scrollToSection(event, 'projects')" title="Go to Projects">Projects</a></li>
+          <li><a href="#" title="Coming Soon!">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main id="main">
+      <p>
+        Hey there! I'm Ammar, a
+        <span
+          style="
+            color: #00bfff;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          "
+          >passionate</span
+        >
+        programmer and
+        <span
+          style="
+            color: #00bfff;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          "
+          >cybersecurity student</span
+        >
+        at Polytechnic Bahrain. While I may not consider myself a
+        <span
+          style="
+            color: #00bfff;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          "
+          >pro</span
+        >
+        just yet, I have an
+        <span
+          style="
+            color: #00bfff;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          "
+          >insatiable thirst for knowledge</span
+        >
+        and a love for
+        <span
+          style="
+            color: #00bfff;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          "
+          >learning new things</span
+        >. I find immense joy in exploring the realms of
+        <span
+          style="
+            color: #00bfff;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          "
+          >game development</span
+        >,
+        <span
+          style="
+            color: #00bfff;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          "
+          >tool creation</span
+        >, and
+        <span
+          style="
+            color: #00bfff;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          "
+          >app design</span
+        >. My focus is on delivering
+        <span
+          style="
+            color: #00bfff;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          "
+          >captivating experiences</span
+        >
+        that leave a
+        <span
+          style="
+            color: #00bfff;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          "
+          >lasting impression</span
+        >. With an
+        <span
+          style="
+            color: #00bfff;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          "
+          >unwavering commitment to personal growth</span
+        >, I constantly strive to
+        <span
+          style="
+            color: #00bfff;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          "
+          >improve my programming skills</span
+        >
+        and stay up-to-date with the
+        <span
+          style="
+            color: #00bfff;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          "
+          >latest technologies</span
+        >. Join me on my
+        <span
+          style="
+            color: #00bfff;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          "
+          >exciting journey</span
+        >
+        as I embrace challenges,
+        <span
+          style="
+            color: #00bfff;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          "
+          >expand my horizons</span
+        >, and create meaningful
+        <span
+          style="
+            color: #00bfff;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          "
+          >contributions</span
+        >
+        to the ever-evolving world of
+        <span
+          style="
+            color: #00bfff;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          "
+          >software development</span
+        >.
+      </p>
+    </main>
+
+
+    <section class="handler" id="projects">
+      <h1>PROJECTS</h1>
+      <section class="projects-container">
+        <div class="item" onclick="openWebsite('https://ammardev.itch.io/cookie-run')">
+         <img src="media/cookie run.png">
+         <h2>Cookies Run!</h2>
+        </div>
+        <div class="item" onclick="openWebsite('https://github.com/ammardevz/ReceiptCreator')">
+          <img src="media/rcp.jpg">
+          <h2>Java ReceiptCreator Package</h2>
+        </div>
+      </section>
+    </section>
+    <footer>
+        <p id="rights">
+            &#169; 2023 All rights reserved | AMMAR DEV
+        </p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
