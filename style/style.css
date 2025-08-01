@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.bordered, main .main-part, header {
+  border: none;
+  border-radius: 60px;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+}
+
+.gradient-text, main .main-part #projects, main .main-part #hero, main h1, header nav ul a, header h2, header h1 {
+  background: linear-gradient(90deg, #007cf0 0%, #00dfd8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.playwrite-font, main .main-part #projects, main .main-part #hero, main h1, header nav ul a, header h1 {
+  font-family: "Playwrite GB S", Roboto, sans-serif;
+}
+
+.main-heading, main h1, header h1 {
+  font-size: 2.2em;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.flex-center, main .main-part, main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column, main .main-part #projects, main .main-part #about, main .main-part #hero, main, body {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  gap: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(237, 237, 237);
+  font-size: 1em;
+}
+
+header {
+  margin: 25px 50px 0px 50px;
+  padding: 24px 40px;
+  display: flex;
+  align-items: center;
+}
+header h2 {
+  font-size: 1em;
+  margin: 0 24px;
+  margin-top: 15px;
+  opacity: 0.7;
+}
+header nav {
+  margin-left: auto;
+}
+header nav ul {
+  margin: 0;
+  display: flex;
+  gap: 18px;
+  list-style: none;
+}
+header nav ul a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 8px 18px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+header nav ul a:hover {
+  background: #f0f4ff;
+  -webkit-text-fill-color: #007cf0;
+  color: #007cf0;
+}
+
+main {
+  margin: 0px 50px;
+  padding: 24px 40px;
+  gap: 25px;
+}
+main .main-part {
+  width: 80vw;
+  min-height: 300px;
+}
+main .main-part #hero {
+  color: rgb(117, 117, 117);
+  padding: 0px 100px 100px 100px;
+}
+main .main-part #about {
+  color: rgb(117, 117, 117);
+  padding: 0px 100px 100px 100px;
+}
+main .main-part #about h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+main .main-part #about p {
+  text-align: left;
+}
+
+/*# sourceMappingURL=style.css.map */

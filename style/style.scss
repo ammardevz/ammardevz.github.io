@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+// Variables
+$bg: rgb(237, 237, 237);
+$fg: linear-gradient(90deg, #007cf0 0%, #00dfd8 100%);
+$font_family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$font_size: 1em;
+
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+// Utility Classes
+.bordered {
+    border: none;
+    border-radius: 60px;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+}
+
+.gradient-text {
+    background: $fg;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.playwrite-font {
+    font-family: "Playwrite GB S", Roboto, sans-serif;
+}
+
+.main-heading {
+    font-size: 2.2em;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+// Base Styles
+body {
+    @extend .flex-column;
+    gap: 50px;
+    font-family: $font_family;
+    background-color: $bg;
+    font-size: $font_size;
+}
+
+// Header Styles
+header {
+    @extend .bordered;
+    margin: 25px 50px 0px 50px;
+    padding: 24px 40px;
+    display: flex;
+    align-items: center;
+
+    h1 {
+        @extend .main-heading;
+        @extend .gradient-text;
+        @extend .playwrite-font;
+    }
+
+    h2 {
+        font-size: 1em;
+        margin: 0 24px;
+        margin-top: 15px;
+        opacity: 0.7;
+        @extend .gradient-text;
+    }
+
+    nav {
+        margin-left: auto;
+
+        ul {
+            margin: 0;
+            display: flex;
+            gap: 18px;
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 1em;
+                padding: 8px 18px;
+                border-radius: 8px;
+                transition: background 0.2s;
+                @extend .gradient-text;
+                @extend .playwrite-font;
+
+                &:hover {
+                    background: #f0f4ff;
+                    -webkit-text-fill-color: #007cf0;
+                    color: #007cf0;
+                }
+            }
+        }
+    }
+}
+
+// Main Content Styles
+main {
+    @extend .flex-column;
+    @extend .flex-center;
+    margin: 0px 50px;
+    padding: 24px 40px;
+    gap: 25px;
+
+    h1 {
+        @extend .main-heading;
+        @extend .gradient-text;
+        @extend .playwrite-font;
+    }
+
+    .main-part {
+        @extend .bordered;
+        @extend .flex-center;
+        width: 80vw;
+        min-height: 300px;
+
+        #hero {
+            @extend .flex-column;
+            color: rgb(117, 117, 117);
+            padding: 0px 100px 100px 100px;
+            @extend .gradient-text;
+            @extend .playwrite-font;
+        }
+
+        #about {
+            @extend .flex-column;
+            color: rgb(117, 117, 117);
+            padding: 0px 100px 100px 100px;
+
+            h1 {
+                text-align: center;
+                margin-bottom: 25px;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+
+        #projects {
+            @extend .flex-column;
+            @extend .gradient-text;
+            @extend .playwrite-font;
+        }
+    }
+}
