@@ -1,73 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/style.css" />
+        <title>Ammar Devz</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Home</title>
-</head>
+    <body>
+        <div class="orb orb-a" aria-hidden="true"></div>
+        <div class="orb orb-b" aria-hidden="true"></div>
 
-<body>
-    <header>
-        <h1>Ammar Devz</h1>
-        <h2>Programming is Life: Code Your World</h2>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#">Coming Soon!</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="main-part">
+        <header>
+            <a href="/" class="logo">Ammar Devz</a>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
             <section id="hero">
-                <h1>Welcome</h1>
-                <h2>To my Website</h2>
-            </section>
-            <section id="about">
-                <h1>About Me</h1>
-                <p>
-                    Welcome to my digital space! I'm Ammar, a passionate developer on a continuous journey of learning
-                    and
-                    growth. While I may not consider myself an expert yet, I believe that every line of code is a step
-                    forward in mastering the craft of programming.
-                </p>
-                <br>
-                <p>
-                    My approach to development is simple: embrace challenges, learn from mistakes, and never stop
-                    improving.
-                    I'm driven by the belief that dedication and persistence can overcome any technical hurdle. Whether
-                    it's
-                    debugging complex issues or learning new technologies, I tackle each project with enthusiasm and
-                    determination.
-                </p>
-                <br>
-                <p>
-                    Currently, I'm focused on expanding my skills across various programming languages and frameworks.
-                    Every
-                    project, no matter how small, is an opportunity to push my boundaries and create something
-                    meaningful.
-                    I'm always excited to collaborate, learn from others, and contribute to the amazing world of
-                    software
-                    development.
-                </p>
-                <br>
-                <p>Join me on this coding adventure as I continue to transform ideas into reality, one commit at a time!
+                <p class="eyebrow">Systems &amp; security</p>
+                <h1>
+                    Building things that don't fall over<br />when someone
+                    pushes on them.
+                </h1>
+                <p class="lede">
+                    I'm Ammar — a Rust developer who thinks like an attacker so
+                    the systems I build don't have to find out the hard way.
                 </p>
             </section>
-        </section>
-        <section class="main-part">
-            <section id="projects">
-                <h1>My Projects</h1>
-                <h2>Coming Soon!</h2>
-            </section>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 - 2026 Ammar Devz. All Rights Reserved.</p>
-    </footer>
-</body>
 
+            <section id="about" data-reveal>
+                <div class="about-grid">
+                    <div class="about-copy">
+                        <h2>About</h2>
+                        <p>
+                            Welcome to my digital space. I'm on a continuous
+                            journey of learning and growth — every line of code
+                            is a step forward in mastering the craft.
+                        </p>
+                        <p>
+                            My approach is simple: embrace challenges, learn
+                            from mistakes, and never stop improving. Whether
+                            it's debugging complex issues or learning new
+                            technologies, I tackle each project with enthusiasm
+                            and determination.
+                        </p>
+                        <p>
+                            Right now I'm deep in Rust systems software — schema
+                            design, service architecture, the kind of
+                            foundations that everything else gets built on. Join
+                            me as I turn ideas into reality, one commit at a
+                            time.
+                        </p>
+                    </div>
+                    <aside class="status-panel">
+                        <div class="status-head">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="status-title">whoami</span>
+                        </div>
+                        <dl>
+                            <dt>role</dt>
+                            <dd>Rust systems developer</dd>
+                            <dt>focus</dt>
+                            <dd>defensive security, service architecture</dd>
+                            <dt>status</dt>
+                            <dd class="status-ok">online — shipping</dd>
+                        </dl>
+                    </aside>
+                </div>
+            </section>
+
+            <section id="projects" data-reveal>
+                <h2>Projects</h2>
+                <div class="terminal">
+                    <div class="terminal-head">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="terminal-src">github.com/ammardevz</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">$</span> ls ./projects</p>
+                        <div id="term-output" class="repo-list">
+                            <p class="terminal-muted">fetching…</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 - 2026 Ammar Devz. All Rights Reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
 </html>
